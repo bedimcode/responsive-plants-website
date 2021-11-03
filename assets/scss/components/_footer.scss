@@ -1,0 +1,83 @@
+/*=============== FOOTER ===============*/
+.footer{
+    &__container{
+        row-gap: 3rem;
+    }
+    &__logo{
+        display: inline-flex;
+        align-items: center;
+        column-gap: .5rem;
+        color: var(--title-color);
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: -1px;
+        margin-bottom: var(--mb-2-5);
+        transition: .3s;
+
+        &:hover{
+            color: var(--first-color);
+        }
+
+        &-icon{
+            font-size: 1.15rem;
+            color: var(--first-color);
+        }
+    }
+    &__title{
+        font-size: var(--h3-font-size);
+        margin-bottom: var(--mb-1-5);
+    }
+    &__subscribe{
+        background-color: var(--first-color-lighten);
+        padding: .75rem;
+        display: flex;
+        justify-content: space-between;
+        border-radius: .5rem;
+    }
+    &__input{
+        width: 70%;
+        padding: 0 .5rem;
+        background: none;
+        color: var(--text-color);
+        border: none;
+        outline: none;
+    }
+    &__button{
+        padding: 1rem;
+    }
+    &__data{
+        display: grid;
+        row-gap: .75rem;
+    }
+    &__information{
+        font-size: var(--small-font-size);
+    }
+    &__social{
+        display: inline-flex;
+        column-gap: .75rem;
+
+        &-link{
+            font-size: 1rem;
+            color: var(--text-color);
+            transition: .3s;
+
+            &:hover {
+                transform: translateY(-.25rem);
+            }
+        }
+    }
+    &__cards{
+        display: inline-flex;
+        align-items: center;
+        column-gap: .5rem;
+    }
+    &__card{
+        width: 35px;
+    }
+    &__copy{
+        text-align: center;
+        font-size: var(--smaller-font-size);
+        color: var(--text-color-light);
+        margin: 5rem 0 1rem;
+    }
+}

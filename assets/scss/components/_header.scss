@@ -1,0 +1,109 @@
+/*=============== HEADER ===============*/
+.header{
+    width: 100%;
+    background-color: var(--body-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    transition: .4s; // For animation dark mode
+}
+
+/*=============== NAV ===============*/
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo,
+    &__toggle,
+    &__close{
+        color: var(--title-color);
+    }
+    &__logo{
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: -1px;
+        display: inline-flex;
+        align-items: center;
+        column-gap: .5rem;
+        transition: .3s;
+
+        &:hover{
+            color: var(--first-color);
+        }
+
+        &-icon{
+            font-size: 1.15rem;
+            color: var(--first-color);
+        }
+    }
+    &__toggle{
+        display: inline-flex;
+        font-size: 1.25rem;
+        cursor: pointer;
+    }
+
+    &__menu{
+        @media screen and (max-width: 767px){
+            position: fixed;
+            background-color: var(--container-color);
+            width: 80%;
+            height: 100%;
+            top: 0;
+            right: -100%;
+            box-shadow: -2px 0 4px hsla(var(--hue), 24%, 15%, .1);
+            padding: 4rem 0 0 3rem;
+            border-radius: 1rem 0 0 1rem;
+            transition: .3s;
+            z-index: var(--z-fixed);
+        }
+    }
+    &__close{
+        font-size: 1.5rem;
+        position: absolute;
+        top: 1rem;
+        right: 1.25rem;
+        cursor: pointer;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+    &__link{
+        color: var(--title-color);
+        font-weight: var(--font-medium);
+
+        &:hover{
+            color: var(--first-color);
+        }
+    }
+}
+
+/* Show menu */
+.show-menu{
+    right: 0;
+}
+
+/* Change background header */
+.scroll-header{
+    box-shadow: 0 1px 4px hsla(var(--hue), 4%, 15%, .10);;
+}
+
+/* Active link */
+.active-link{
+    position: relative;
+    color: var(--first-color);
+
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: -.5rem;
+        left: 0;
+        width: 50%;
+        height: 2px;
+        background-color: var(--first-color);
+    }
+}

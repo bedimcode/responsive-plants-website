@@ -1,0 +1,32 @@
+/*=============== ABOUT ===============*/
+.about{
+    &__container{
+        row-gap: 2rem;
+    }
+    &__img{
+        width: 280px;
+        justify-self: center;
+    }
+    &__title{
+        margin-bottom: var(--mb-1);
+    }
+    &__description{
+        margin-bottom: var(--mb-2);
+    }
+    &__details{
+        display: grid;
+        row-gap: 1rem;
+        margin-bottom: var(--mb-2-5);
+
+        &-description{
+            display: inline-flex;
+            column-gap: .5rem;
+            font-size: var(--small-font-size);
+        }
+        &-icon{
+            font-size: 1rem;
+            color: var(--first-color);
+            margin-top: .15rem;
+        }
+    }
+}

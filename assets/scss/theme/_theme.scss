@@ -1,0 +1,40 @@
+/*=============== THEME ===============*/
+/*========== Variables Dark theme ==========*/
+body.dark-theme{
+    --first-color-dark: hsl(var(--hue), 8%, 20%);
+    --title-color: hsl(var(--hue), 4%, 95%);
+    --text-color: hsl(var(--hue), 4%, 75%);
+    --body-color: hsl(var(--hue), 8%, 12%);
+    --container-color: hsl(var(--hue), 8%, 16%);
+}
+
+/*========== Button Dark/Light ==========*/
+.change-theme {
+    color: var(--title-color);
+    font-size: 1.15rem;
+    cursor: pointer;
+}
+
+.nav__btns{
+    display: inline-flex;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+/*========== 
+Color changes in some parts of 
+the website, in dark theme 
+==========*/
+.dark-theme .steps__bg,
+.dark-theme .questions{
+    background-color: var(--first-color-dark);
+}
+
+.dark-theme .product__circle,
+.dark-theme .footer__subscribe{
+    background-color: var(--container-color);
+}
+
+.dark-theme .scroll-header{
+    box-shadow: 0 1px 4px hsla(var(--hue), 4%, 4%, .3);
+}

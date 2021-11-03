@@ -1,0 +1,42 @@
+/*=============== STEPS ===============*/
+.steps{
+    &__bg{
+        background-color: var(--first-color);
+        padding: 3rem 2rem 2rem;
+        border-radius: 1rem;
+    }
+    &__container{
+        gap: 2rem;
+        padding-top: 1rem;
+    }
+    &__title{
+        color: #FFF;
+    }
+    &__card{
+        background-color: var(--container-color);
+        padding: 2.5rem 3rem 2rem 1.5rem;
+        border-radius: 1rem;
+
+        &:hover .steps__card-number{
+            transform: translateY(-.25rem);
+        }
+
+        &-number{
+            display: inline-block;
+            background-color: var(--first-color-alt);
+            color: #FFF;
+            padding: .5rem .75rem;
+            border-radius: .25rem;
+            font-size: var(--h2-font-size);
+            margin-bottom: var(--mb-1-5);
+            transition: .3s;
+        }
+        &-title{
+            font-size: var(--h3-font-size);
+            margin-bottom: var(--mb-0-5);
+        }
+        &-description{
+            font-size: var(--small-font-size);
+        }
+    }
+}

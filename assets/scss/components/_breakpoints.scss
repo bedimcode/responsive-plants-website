@@ -1,0 +1,238 @@
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px){
+    .container{
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+
+    .home{
+        &__img{
+            width: 180px;
+        }
+        &__title{
+            font-size: var(--h1-font-size);
+        }
+    }
+
+    .steps{
+        &__bg{
+            padding: 2rem 1rem;
+        }
+        &__card{
+            padding: 1.5rem;
+        }
+    }
+
+    .product__container{
+        grid-template-columns: .6fr;
+        justify-content: center;
+    }
+}
+
+/* For medium devices */
+@media screen and (min-width: 576px){
+    .steps{
+        &__container{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    .product{
+        &__description{
+            padding: 0 4rem;
+        }
+        &__container{
+            grid-template-columns: repeat(2, 170px);
+            justify-content: center;
+            column-gap: 5rem;
+        }
+    }
+
+    .footer__subscribe{
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 767px){
+    body{
+        margin: 0;
+    }
+
+    .nav{
+        height: calc(var(--header-height) + 1.5rem);
+        column-gap: 3rem;
+
+        &__toggle,
+        &__close{
+            display: none;
+        }
+        &__menu{
+            margin-left: auto;
+        }
+        &__list{
+            flex-direction: row;
+            column-gap: 3rem;
+        }
+    }
+    
+    .home__container,
+    .about__container,
+    .questions__container,
+    .contact__container,
+    .footer__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home{
+        padding: 10rem 0 5rem;
+        
+        &__container{
+            align-items: center;
+        }
+        &__img{
+            width: 280px;
+            order: 1;
+        }
+        &__social{
+            top: 30%;
+        }
+    }
+
+    .questions__container{
+        align-items: flex-start;
+    }
+
+    .footer{
+        &__container{
+            column-gap: 3rem;
+        }
+        &__subscribe{
+            width: initial;
+        }
+    }
+}
+
+/* For large devices */
+@media screen and (min-width: 992px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section{
+        padding: 8rem 0 1rem;
+
+        &__title, 
+        &__title-center{
+            font-size: var(--h1-font-size);
+        }
+    }
+
+    .home{
+        padding: 13rem 0 5rem;
+
+        &__img{
+            width: 350px;
+        }
+        &__description{
+            padding-right: 7rem;
+        }
+    }
+
+    .about__img{
+        width: 380px;
+    }
+
+    .steps{
+        &__container{
+            grid-template-columns: repeat(3, 1fr);
+        }
+        &__bg{
+            padding: 3.5rem 2.5rem;
+        }
+        &__card-title{
+            font-size: var(--normal-font-size);
+        }
+    }
+
+    .product{
+        &__description{
+            padding: 0 16rem;
+        }
+        &__container{
+            padding: 4rem 0;
+            grid-template-columns: repeat(3, 185px);
+            gap: 4rem 6rem;
+        }
+        &__img{
+            width: 160px;
+        }
+        &__circle{
+            width: 110px;
+            height: 110px;
+        }
+        &__title,
+        &__price{
+            font-size: var(--normal-font-size);
+        }
+    }
+
+    .questions{
+        &__container{
+            padding: 1rem 0 4rem;
+        }
+        &__title{
+            text-align: initial;
+        }
+        &__group{
+            row-gap: 2rem;
+        }
+        &__header{
+            padding: 1rem;
+        }
+        &__description{
+            padding: 0 3.5rem 2.25rem 2.75rem;
+        }
+    }
+
+    .footer{
+        &__logo{
+            font-size: var(--h3-font-size);
+        }
+        &__container{
+            grid-template-columns: 1fr .5fr .5fr .5fr;
+        }
+        &__copy{
+            margin: 7rem 0 2rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .home{
+        &__social{
+            right: -3rem;
+            row-gap: 4.5rem;
+
+            &-follow{
+                font-size: var(--small-font-size);
+
+                &::after{
+                    width: 1.5rem;
+                    right: -60%;
+                }
+            }
+            &-link{
+                font-size: 1.15rem;
+            }
+        }
+    }
+
+    .about__container{
+        column-gap: 7rem;
+    }
+
+    .scrollup{
+        right: 3rem;
+    }
+}

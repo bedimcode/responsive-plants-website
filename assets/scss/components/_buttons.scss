@@ -1,0 +1,37 @@
+/*=============== BUTTONS ===============*/
+.button{
+    display: inline-block;
+    background-color: var(--first-color);
+    color: #FFF;
+    padding: 1rem 1.75rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+    transition: .3s;
+
+    &:hover .button__icon{
+        transform: translateX(.25rem);
+    }
+
+    &:hover{
+        background-color: var(--first-color-alt);
+    }
+
+    &__icon{
+        transition: .3s;
+    }
+
+    &--flex{
+        display: inline-flex;
+        align-items: center;
+        column-gap: .5rem;
+    }
+
+    &--link{
+        color: var(--first-color);
+        font-weight: var(--font-medium);
+
+        &:hover .button__icon{
+            transform: translateX(.25rem);
+        }
+    }
+}

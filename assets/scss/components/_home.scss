@@ -1,0 +1,61 @@
+/*=============== HOME ===============*/
+.home{
+    padding: 3.5rem 0 2rem;
+
+    &__container{
+        position: relative;
+        row-gap: 2rem;
+    }
+    &__img{
+        width: 200px;
+        justify-self: center;
+    }
+    &__title{
+        font-size: var(--big-font-size);
+        line-height: 140%;
+        margin-bottom: var(--mb-1);
+    }
+    &__description{
+        margin-bottom: var(--mb-2-5);
+    }
+    &__social{
+        position: absolute;
+        top: 2rem;
+        right: -1rem;
+        display: grid;
+        justify-items: center;
+        row-gap: 3.5rem;
+
+        &-follow{
+            font-weight: var(--font-medium);
+            font-size: var(--smaller-font-size);
+            color: var(--first-color);
+            position: relative;
+            transform: rotate(90deg);
+
+            &::after{
+                content: '';
+                position: absolute;
+                width: 1rem;
+                height: 2px;
+                background-color: var(--first-color);
+                right: -45%;
+                top: 50%;
+            }
+        }
+        &-links{
+            display: inline-flex;
+            flex-direction: column;
+            row-gap: .25rem;
+        }
+        &-link{
+            font-size: 1rem;
+            color: var(--first-color);
+            transition: .3s;
+
+            &:hover {
+                transform: translateX(.25rem);
+            }
+        }
+    }
+}
