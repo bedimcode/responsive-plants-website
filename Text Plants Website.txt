@@ -1,0 +1,132 @@
+========== HOME ==========
+.home__title
+Plants will make <br> your life better
+
+.home__description
+Create incredible plant design for your offices or apastaments. 
+Add fresness to your new ideas.
+
+.home__social-links
+https://www.facebook.com/
+
+https://www.instagram.com/
+
+https://twitter.com/
+
+========== ABOUT ==========
+.section__title
+Who we really are & <br> why choose us
+
+.about__description
+We have over 4000+ unbiased reviews and our customers 
+trust our plant process and delivery service every time
+
+.about__details-description
+We always deliver on time.
+
+We give you guides to protect and care for your plants.
+
+We always come over for a check-up after sale.
+
+100% money back guaranteed.
+
+========== STEPS ==========	
+.section__title
+Steps to start your <br> plants off right
+
+.steps__card-title
+Choose Plant
+
+Place an order
+
+Get plants delivered
+
+.steps__card-description
+We have several varieties plants you can choose from
+
+Once your order is set, we move to the next step which is the shipping
+
+Our delivery process is easy, you receive the plant direct to your door.
+
+========== PRODUCTS ==========
+.section__title-center
+Check out our <br> products
+
+.product__description
+Here are some selected plants from our showroom, all are in excellent 
+shape and has a long life span. Buy and enjoy best quality.
+
+.product__title
+Cacti Plant
+
+Cactus Plant
+
+Aloe Vera Plant
+
+Succulent Plant
+
+Green Plant
+
+========== QUESTIONS ==========
+.section__title
+Some common questions <br> were often asked
+
+.questions__item-title
+My flowers are falling off or dying?
+
+What causes leaves to become pale?
+
+What causes brown crispy leaves?
+
+How do i choose a plant?
+
+How do I change the pots?
+
+Why are gnats flying around my plant?
+
+.questions__description
+Plants are easy way to add color energy and transform your 
+space but which planet is for you. Choosing the right plant.
+
+========== CONTACT ==========
+.section__title
+Reach out to us today <br> via any of the given <br> information
+
+.contact__subtitle
+Call us for instant support
+
+Write us by mail
+
+.contact__description
++999 888 777
+
+user@email.com
+
+========== FOOTER ==========
+.footer__title
+Subscribe to our newsletter <br> to stay update
+
+Our Address
+
+Contact Us
+
+We accept all credit cards
+
+.footer__information
+1234 - Peru
+
+La Libertad - 43210
+
+123-456-789
+
++999 888 777
+
+.footer__social-link
+https://www.facebook.com/
+
+https://www.instagram.com/
+
+https://twitter.com/
+
+.footer__copy
+&#169; Bedimcode. All rigths reserved
