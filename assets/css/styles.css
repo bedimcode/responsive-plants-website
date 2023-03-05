@@ -67,6 +67,11 @@
   margin: 0;
 }
 
+.user-details {
+  text-align: center;
+  margin: 5px auto
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -965,6 +970,7 @@ the website, in dark theme
   .section__title,
   .section__title-center{
     font-size: var(--h1-font-size);
+    text-align: center;
   }
 
   .home{
@@ -1010,12 +1016,23 @@ the website, in dark theme
   .product__price{
     font-size: var(--normal-font-size);
   }
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set height to full viewport height */
+  }
+  .image-container img {
+    max-width: 100%; /* Ensure the image does not exceed container width */
+  }
+  
+  
 
   .questions__container{
     padding: 1rem 0 4rem;
   }
   .questions__title{
-    text-align: initial;
+    text-align: center;
   }
   .questions__group{
     row-gap: 2rem;
