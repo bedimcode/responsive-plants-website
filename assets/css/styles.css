@@ -158,6 +158,8 @@ the website, in dark theme
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
+
+
 .section{
   padding: 5.5rem 0 1rem;
 }
@@ -514,6 +516,8 @@ the website, in dark theme
   margin-bottom: var(--mb-0-75);
   transition: .3s;
 }
+
+
 
 .product__title,
 .product__price{
@@ -1025,6 +1029,48 @@ the website, in dark theme
   .image-container img {
     max-width: 100%; /* Ensure the image does not exceed container width */
   }
+  
+
+  .slider {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .slider-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .slider-nav-item {
+    width: 80px;
+    height: 80px;
+    margin: 0 10px;
+    border: 2px solid #ddd;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .slider-nav-item.active {
+    border-color: #333;
+  }
+  
+  .slider-wrapper {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .slider-item {
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+    scroll-snap-align: start;
+  }
+  
   
   
 
