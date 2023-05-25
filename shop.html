@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWNNJCY90W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+      
+        gtag('config', 'G-GWNNJCY90W');
+      </script>
+      
+              <!--Google Analytics account setup-->
+      
+             
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+              <!--=============== FAVICON ===============-->
+              <link rel="shortcut icon" href="Souper Fresh Logo favicon-01.png" type="image/x-icon">
+      
+              <!--=============== REMIX ICONS ===============-->
+              <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+      
+              <!--=============== CSS ===============-->
+              <link rel="stylesheet" href="assets/css/styles.css">
+              
+              
+      
+              <title>Souper Fresh</title>
+
+
+              <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+
+
+              
+
+
+</head>
+<body>
+   <!--==================== HEADER ====================-->
+   <header class="header" id="header">
+    <nav class="nav container">
+        <a  class="nav__logo">
+            <img src = "Souper Fresh Logo favicon-01.png" height = "32"
+            width = "32" type="image/x-icon">
+             Souper Fresh
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class = "nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="cart.html" class = "nav__link" >Cart</a>
+                </li>
+                
+                
+                
+            </ul>
+
+            <div class="nav__close" id="nav-close">
+                <i class="ri-close-line"></i>
+            </div>
+        </div>
+
+        <div class="nav__btns">
+            <!-- Theme change button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<section class="product section container" id="products">
+    <h2 class="section__title-center">
+        Check out our <br> products
+    </h2>
+
+    <p class="product__description">
+        Here are some of our soups. Keep a close watch and <br>expect to see new flavours in the 
+        coming weeks
+    </p>
+
+    <div class="product__container grid">
+        <article class="product__card">
+            
+
+            <img src="assets/img/MOCKUP-01.png" alt="" class="product__img">
+
+            <h3 class="product__title">Vegetable Soup</h3>
+            <span class="product__price">3.00</span>
+
+            <stripe-buy-button
+    buy-button-id="buy_btn_1NAkUPArDOvhvxI9zS3zx65Y"
+    publishable-key="pk_live_51NAMHBArDOvhvxI9NTJDEicJxvvaCqvuGmlGYtsjxrZ2Q3NlJIUOF6SWhOwmmFkfBOooxGTVJjSzSBgEmRwFqThG003zrA9Kdt"
+    
+    >
+    </stripe-buy-button>
+        </article>
+
+        <article class="product__card">
+            
+
+            <img src="assets/img/filler.png" alt="" class="product__img">
+
+            
+            
+            
+        </article>
+
+        <article class="product__card">
+           
+
+            <img src="assets/img/floating question mark.png" alt="" class="product__img">
+
+            
+
+            <button class="buy-button">Coming Soon</button>
+
+        </article>
+
+        <article class="product__card">
+            
+
+            <img src="assets/img/floating question mark.png" alt="" class="product__img">
+
+            
+
+            <button class="buy-button">Coming Soon</button>
+        </article>
+
+        <article class="product__card">
+            
+
+            <img src="assets/img/filler.png" alt="" class="product__img">
+
+            
+            
+        </article>
+
+        <article class="product__card">
+            
+
+            <img src="assets/img/floating question mark.png" alt="" class="product__img">
+
+            
+
+            <button class="buy-button">Coming Soon</button>
+        </article>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!--==================== FOOTER ====================-->
+<footer class="footer section">
+    
+    
+       
+    <div class="footer__container container grid">
+        <div class="footer__content">
+            <a href="#" class="footer__logo">
+                <img src = "Souper Fresh Logo favicon-01.png" height = "32"
+                width="32"> Souper Fresh
+            </a>
+
+            <h3 class="footer__title">
+                Subscribe to our newsletter <br> to stay updated
+            </h3>
+
+            <div class="footer__subscribe">
+                <input type="email" placeholder="Enter your email" class="footer__input">
+
+                <button class="button button--flex footer__button">
+                    Subscribe
+                    <i class="ri-arrow-right-up-line button__icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="footer__content">
+            <h3 class="footer__title">Our Address</h3>
+
+            <ul class="footer__data">
+                <li class="footer__information">Point Village</li>
+                <li class="footer__information">Mayor Street Upper</li>
+                <li class="footer__information">Dublin 1</li>
+            </ul>
+        </div>
+
+        <div class="footer__content">
+            <h3 class="footer__title">Contact Us</h3>
+
+            <ul class="footer__data">
+                <li class="footer__information">089 986 1761</li>
+                
+                <div class="footer__social">
+                    <a href="https://www.linkedin.com/company/its-souper/" class="footer__social-link">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/souper.fresh" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    
+                    
+                </div>
+            </ul>
+        </div>
+
+        
+    </div>
+
+    <p class="footer__copy">&#169; Souper Fresh. All rigths reserved</p>
+</footer>
+
+<!--=============== SCROLL UP ===============-->
+<a href="#" class="scrollup" id="scroll-up"> 
+    <i class="ri-arrow-up-fill scrollup__icon"></i>
+</a>
+
+<!--=============== SCROLL REVEAL ===============-->
+<script src="assets/js/scrollreveal.min.js"></script>
+
+<!--=============== MAIN JS ===============-->
+<script src="assets/js/main.js"></script>
+
+<!--Functions-->
+
+<script src = assets/js/shop.js"></script>
+
+
+</body>
+</html>

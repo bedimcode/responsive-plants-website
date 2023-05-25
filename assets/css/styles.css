@@ -8,15 +8,16 @@
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
   --hue: 152;
-  --first-color: hsl(var(--hue), 24%, 32%);
-  --first-color-alt: hsl(var(--hue), 24%, 28%);
+  --first-color: #E3852D;
+  --first-color-alt: #69A937;
   --first-color-light: hsl(var(--hue), 24%, 66%);
   --first-color-lighten: hsl(var(--hue), 24%, 92%);
-  --title-color: hsl(var(--hue), 4%, 15%);
-  --text-color: hsl(var(--hue), 4%, 35%);
+  --title-color: #69A937;
+  --text-color: #000000;
   --text-color-light: hsl(var(--hue), 4%, 55%);
   --body-color: hsl(var(--hue), 0%, 100%);
   --container-color: #FFF;
+
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -97,7 +98,7 @@ button{
   outline: none;
 }
 
-h1,h2,h3{
+h1,h2{
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
 }
@@ -266,7 +267,7 @@ the website, in dark theme
 .nav__list{
   display: flex;
   flex-direction: column;
-  row-gap: 1.5rem;
+  row-gap: 1.3rem;
 }
 
 .nav__link{
@@ -309,6 +310,7 @@ the website, in dark theme
 .home{
   padding: 3.5rem 0 2rem;
 }
+
 
 .home__container{
   position: relative;
@@ -523,7 +525,7 @@ the website, in dark theme
 .product__price{
   font-size: var(--small-font-size);
   font-weight: var(--font-semi-bold);
-  color: var(--title-color);
+  color: var(--text-color);
 }
 
 .product__title{
@@ -1124,4 +1126,25 @@ the website, in dark theme
   .scrollup{
     right: 3rem;
   }
+
+  /* online shop page */
+
+  .buy-button {
+    padding: 10px 20px;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--text-color);
+    
+    
+    background-color: #E3852D;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 300px;
+    height: 50px
+    
+  }
+  
+  
 }
